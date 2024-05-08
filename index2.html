@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Xóa giá trị của thuộc tính từ một phần tử bằng JavaScript</title>
+</head>
+<body>
+    <input type="text" id="myInput" auto-complete="username" value="121212121">
+    <button onclick="clearAttributeValue()">Xóa giá trị của thuộc tính</button>
+
+    <script>
+        function clearAttributeValue() {
+            // Sử dụng attribute để tìm phần tử cần xóa giá trị của thuộc tính
+            var inputElement = document.querySelector('input[auto-complete="username"]');
+            if (inputElement) {
+                // Nếu tìm thấy phần tử, gán giá trị của thuộc tính thành null
+                inputElement.setAttribute('value', '');
+                console.log(done);
+            } else {
+                console.error('Không tìm thấy phần tử input');
+            }
+        }
+    </script>
+</body>
+</html>
